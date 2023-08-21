@@ -4,3 +4,75 @@
   box-sizing: border-box;
 }
 
+r/* UTILS */
+.container{
+  width: 100%;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col {
+  border: 1px dashed black;
+  min-height: 400px;
+  width: 100%;
+  padding: 30px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+/* CARD */
+
+.card {
+
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+}
+/* DEMO */
+
+#demo .card {
+  background-color: #B5DDFB;
+}
+
+/* PLANNING */
+
+#planning {
+  background-color: #9792E4;
+}
+
+#planning .card {
+  background-color: #FFF;
+}
+
+/* MEDIA QWERY */
+
+@media screen and (min-width: 768px) {
+  #demo .row .col{
+      width: calc(100% / 3);
+  }
+#deml #big-col{
+      width: calc(100% / 3 * 2); 
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+      width: 70%;
+      margin: 0 auto;
+  }
+}
+#planning .col {
+  width: calc(100% / 2);
+}
+
+#planning .container {
+  padding: 30px 30px 30px 30px;
+}
+
+
+/*firt commit*/
