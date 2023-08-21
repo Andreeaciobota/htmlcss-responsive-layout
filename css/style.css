@@ -39,6 +39,9 @@ r/* UTILS */
 .txt-cntr {
   text-align: center;
 }
+.txt-white {
+  color: #FFF;
+}
 /* DEMO */
 
 #demo .card {
@@ -46,11 +49,11 @@ r/* UTILS */
 }
 
 /* PLANNING */
-
+#benefits,
 #planning {
   background-color: #9792E4;
 }
-
+#benefits .card,
 #planning .card {
   background-color: #FFF;
 }
@@ -70,6 +73,11 @@ r/* UTILS */
       width: calc(100% / 3 * 2); 
   }
 }
+#benefits .col {
+  width: calc(100% / 2);
+}
+
+
 
 @media screen and (min-width: 1200px) {
   .container {
@@ -84,4 +92,9 @@ r/* UTILS */
 #planning .container {
   padding: 30px 30px 30px 30px;
 }
+#benefits .col {
+  width: calc(100% / 3);
+}
+
+
 
