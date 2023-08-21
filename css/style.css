@@ -24,6 +24,9 @@ r/* UTILS */
 .pb-30 {
   padding-bottom: 30px;
 }
+.pt-30 {
+  padding-top: 30px;
+}
 
 /* CARD */
 
@@ -31,7 +34,10 @@ r/* UTILS */
 
   width: 100%;
   height: 100%;
-  border-radius: 10%;
+  border-radius: 20px;
+}
+.txt-cntr {
+  text-align: center;
 }
 /* DEMO */
 
@@ -47,6 +53,11 @@ r/* UTILS */
 
 #planning .card {
   background-color: #FFF;
+}
+/*TESTIMONIALS */
+
+#testimonials .card {
+    background-color: #9792E4;
 }
 
 /* MEDIA QWERY */
@@ -74,5 +85,3 @@ r/* UTILS */
   padding: 30px 30px 30px 30px;
 }
 
-
-/*firt commit*/
