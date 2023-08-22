@@ -21,7 +21,7 @@ p{
 }
 h2 {
   font-size: 2rem;
-  color: #9792E4;
+  
 }
 
 h3 {
@@ -38,8 +38,6 @@ h3 {
   justify-content: space-between;
 }
 .col {
-  border: 1px dashed black;
-  /*min-height: 400px;*/
   width: 100%;
   padding: 2rem;
 }
@@ -67,7 +65,7 @@ h3 {
 }
 .card {
   width: 100%;
-  /*height: 100%;*/
+  height: 100%;
   border-radius: 1.4rem;
   padding: 2rem;
 }
@@ -77,12 +75,20 @@ h3 {
 .txt-white {
   color: #FFF;
 }
-txt-purple {
+.txt-purple {
   color: #9792E4;
 }
 
 .txt-blue {
   color: #2083F7;
+}
+
+.f-sz-2 {
+  font-size: 2rem;
+}
+
+.f-w-700 {
+  font-weight: 700;
 }
 
 
@@ -92,6 +98,7 @@ header {
   top: 0;
   right: 0;
   left: 0;
+  z-index: 1;
   background-color: #2083F7;
 }
 header .row {
@@ -107,7 +114,7 @@ header .list {
 header li {
   padding-right: 2rem;
 }
-fa-bars {
+.fa-bars {
   font-size: 1.6rem;
 }
 
@@ -189,6 +196,7 @@ fa-bars {
   height: 14rem;
   width: 14rem;
   border-radius: 50%;
+  margin-left: 0;
   object-fit: cover
 }
 
@@ -201,6 +209,7 @@ blockquote {
   font-size: 1.4rem;
 }
 /* BENEFITS */
+
 #planning .card,
 #benefits .card {
     background-color: #FFF;
@@ -210,25 +219,87 @@ blockquote {
   width: 8rem;
 }
 
+/* ABOUT US */
+
+#about-us p {
+    line-height: 2rem;
+}
+
+#about-us img {
+    border-radius: 50%;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#about-us h2 {
+    font-size: 3.5rem;
+}
+
+#about-us a{
+    width: fit-content;
+}
+#about-us figure {
+  position: relative;
+}
+
+.quote {
+  position: absolute;
+  top: 0;
+  right: 5rem;
+  font-size: 5rem;
+  color: #9792E4;
+}
+
+
+
 /* START */
 
 footer,
 #start {
   padding: 2rem;
 }
+.txt-yellow {
+  color: #F8C05E;
+  font-size: 4rem;
+  font-weight: 700;
+}
 
+.white-bttn {
+  background-color: #FFF;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.white-bttn a {
+  color: #9792E4;
+}
+
+.fa-circle {
+  font-size: 0.2rem;
+  vertical-align: 50%;
+}
+
+#privacy {
+  text-decoration: underline;
+}
 
 /* FOOTER */
 
 footer {
   background-color: #333333;
 }
+footer a{
+  text-decoration: underline;
+  color: #9792E4;
+}
+
 
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 768px) {
+  /*layout*/ 
   .container{
-    /*layout*/ 
     max-width: 750px;
     margin: 0 auto;
   }
@@ -253,15 +324,22 @@ footer {
 }
 /*section*/
 .w-20 {
-  width: calc(100% / 5 - 10rem);
+  width: calc(20% 10rem);
 }
 
 .w-80 {
-  width: calc(100% / 5 * 4 - 10rem);
+  width: calc(80% - 10rem);
+}
+#about-us img {
+  width: 80%;
+}
+.quote {
+  right: 1rem;
+
 }
 @media screen and (min-width: 999px) {
+  /*layout*/
   .container {
-    /*layout*/
       max-width: 980px;
       margin: 0 auto;
   }
