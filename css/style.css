@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  padding-top: 60px;
+  padding-top: 4rem;
 }
 /* UTILS */
 .container {
@@ -19,18 +19,18 @@ body {
   border: 1px dashed black;
   min-height: 400px;
   width: 100%;
-  padding: 30px;
+  padding: 2rem;
 }
-.pb-30 {
-  padding-bottom: 30px;
+.pb-2 {
+  padding-bottom: 2rem;
 }
-.pt-30 {
-  padding-top: 30px;
+.pt-2 {
+  padding-top: 2rem;
 }
 .card {
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 1.4rem;
 }
 .txt-cntr {
   text-align: center;
@@ -47,9 +47,9 @@ header {
   background-color: #2083F7;
 }
 header .row {
-  min-height: 60px;
+  min-height: 4rem;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 2rem;
 }
 header .list {
   list-style-type: none;
@@ -57,7 +57,8 @@ header .list {
   display: none;
 }
 header li {
-  padding-left: 10px;
+  padding-left: 1rem;
+  padding-right: 2rem;
 }
 /* DEMO */
 #about-us .card,
@@ -83,7 +84,7 @@ header li {
 
 footer,
 #start {
-  padding: 30px;
+  padding: 2rem;
 }
 
 
@@ -96,6 +97,10 @@ footer {
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 768px) {
+  .container{
+    max-width: 750px;
+    margin: 0 auto;
+  }
   #demo .row .col {
       width: calc(100% / 3);
   }
@@ -112,13 +117,13 @@ footer {
   }
 
   footer {
-      padding: 30px 100px;
+      padding: 2rem 7rem;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 999px) {
   .container {
-      width: 70%;
+      max-width: 980px;
       margin: 0 auto;
   }
   #planning .col {
@@ -144,4 +149,11 @@ footer {
   header .row{
       padding-right: 0;
   }
+}
+@media screen and (min-width: 1200px){
+  .container {
+      max-width: 1180px;
+      margin: 0 auto;
+  }
+
 }
