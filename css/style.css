@@ -21,6 +21,7 @@ p{
 }
 h2 {
   font-size: 2rem;
+  color: #9792E4;
 }
 
 h3 {
@@ -184,11 +185,11 @@ fa-bars {
 #testimonials .card {
   background-color: #9792E4;
 }
-testimonials img {
-  height: 12rem;
-  width: 12rem;
+#testimonials img {
+  height: 14rem;
+  width: 14rem;
   border-radius: 50%;
-  margin: 0 auto;
+  object-fit: cover
 }
 
 blockquote {
@@ -205,7 +206,9 @@ blockquote {
     background-color: #FFF;
 }
 
-
+#benefits .bttn {
+  width: 8rem;
+}
 
 /* START */
 
@@ -267,7 +270,7 @@ footer {
   }
   #about-us .container,
   #planning .container {
-      padding: 30px 30px 30px 30px;
+      padding: 2rem
   }
   #benefits .col {
       width: calc(100% / 3);
