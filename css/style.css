@@ -208,6 +208,10 @@ blockquote {
 .name-testimonial {
   font-size: 1.4rem;
 }
+#testimonials .txt-white {
+  text-align: left;
+}
+
 /* BENEFITS */
 
 #planning .card,
@@ -239,7 +243,7 @@ blockquote {
     width: fit-content;
 }
 #about-us figure {
-  position: relative;
+  position: relative; 
 }
 
 .quote {
@@ -334,8 +338,8 @@ footer a{
   width: 80%;
 }
 .quote {
-  right: 1rem;
-
+  /*right: 1rem;*/
+width: 10%;
 }
 @media screen and (min-width: 999px) {
   /*layout*/
