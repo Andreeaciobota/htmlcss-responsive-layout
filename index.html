@@ -7,20 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/3395c408c6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
     <title>Responsive Layout </title>
 </head>
 <body>
   <header>
     <div class="container row txt-white">
-        <div class="logo">logo</div>
+        <a href="#" class="logo"><img src="/img/logo.png" alt="logo"></a>
         <nav> 
             <span class="hamburger"><i class="fa-solid fa-bars"></i></span>
             <ul class="row list">
-                <li>lorem</li>
-                <li>lorem</li>
-                <li>lorem</li>
-                <li>lorem</li>
-                <li>lorem</li>
+                <li><a href="#">Planning</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#" class="bttn">Get Started</a></li>
             </ul>
         </nav>
       </div>
@@ -29,11 +33,44 @@
     <main>
         <section id="demo">
             <div class="row pb-2 container">
-                <div id="big-col" class="col"><div class="card"></div></div>
-                <div class="col"><div class="card"></div></div>
-                <div class="col"><div class="card"></div></div>
-                <div class="col"><div class="card"></div></div>
-                <div class="col"><div class="card"></div></div>
+                <div id="big-col" class="col">
+                    <div class="card row flex-col">
+                        <div class="demo-description pb-2 w-50">
+                            <h3 class="pb-2">Get a demo application</h3>
+                            <p class="pb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, eveniet impedit illum, debitis minima, molestiae ea perspiciatis mollitia iste!</p>
+                            <a href="#" class="bttn blue-bttn"><i class="fa-brands fa-apple"></i> App Store</a>
+                        </div>
+                        <img src="/img/phone.png" alt="phone" class="pt-2 w-50">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card txt-cntr">
+                        <span class="blue-icon"><i class="fa-solid fa-file-code"></i></span>
+                        <h3 class="pb-2 pt-2">Clean Code</h3>
+                        <p class="pb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, eveniet impedit illum, debitis minima, molestiae ea perspiciatis mollitia iste!</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card txt-cntr">
+                        <span class="blue-icon pb-2"><i class="fa-solid fa-compass-drafting"></i></span>
+                        <h3 class="pb-2 pt-2">Web Design</h3>
+                        <p class="pb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, eveniet impedit illum, debitis minima, molestiae ea perspiciatis mollitia iste!</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card txt-cntr">
+                        <span class="blue-icon pb-2"><i class="fa-solid fa-laptop-code"></i></span>
+                        <h3 class="pb-2 pt-2">Developement</h3>
+                        <p class="pb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, eveniet impedit illum, debitis minima, molestiae ea perspiciatis mollitia iste!</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card txt-cntr">
+                        <span class="blue-icon pb-2"><i class="fa-solid fa-bullhorn"></i></span>
+                        <h3 class="pb-2 pt-2">Branding</h3>
+                        <p class="pb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, eveniet impedit illum, debitis minima, molestiae ea perspiciatis mollitia iste!</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="planning">

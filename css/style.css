@@ -5,6 +5,12 @@
 }
 body {
   padding-top: 4rem;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+}
+a {color: #FFF;
+  text-decoration: none;
+
 }
 /* UTILS */
 .container {
@@ -21,6 +27,14 @@ body {
   width: 100%;
   padding: 2rem;
 }
+.bttn {
+  display: block;
+  padding: 0.5rem 0.7rem;
+  border-radius: 2rem;
+}
+.flex-col {
+  flex-direction: column;
+}
 .pb-2 {
   padding-bottom: 2rem;
 }
@@ -31,6 +45,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 1.4rem;
+  padding: 2rem;
 }
 .txt-cntr {
   text-align: center;
@@ -57,13 +72,65 @@ header .list {
   display: none;
 }
 header li {
-  padding-left: 1rem;
   padding-right: 2rem;
 }
+fa-bars {
+  font-size: 1.6rem;
+}
+
+.list .bttn {
+  color: #000;
+  background-color: #FFF;
+}
+
+
 /* DEMO */
 #about-us .card,
 #demo .card {
   background-color: #B5DDFB;
+}
+#demo img{
+  max-width: 90%;
+  align-self: center;
+}
+
+#big-col .card{
+  padding-bottom: 0;
+}
+
+#demo h3{
+  color: #2083F7;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+#demo p {
+  line-height: 1.6rem;
+  color: #5A6E7F;
+  font-weight: 700;
+}
+
+.blue-bttn {
+  background-color: #2083F7;
+  color: #FFF;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  width: 12rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.blue-icon {
+  color: #2083F7;
+  font-size: 4rem;
+}
+
+#demo #big-col .card{
+  padding: 0;
+}
+
+.demo-description {
+  padding: 2rem;
 }
 /* PLANNING */
 #benefits,
@@ -98,6 +165,7 @@ footer {
 
 @media screen and (min-width: 768px) {
   .container{
+    /*layout*/ 
     max-width: 750px;
     margin: 0 auto;
   }
@@ -120,9 +188,11 @@ footer {
       padding: 2rem 7rem;
   }
 }
+/*section*/
 
 @media screen and (min-width: 999px) {
   .container {
+    /*layout*/
       max-width: 980px;
       margin: 0 auto;
   }
@@ -139,6 +209,7 @@ footer {
   .small-container {
       width: 40%;
   }
+  /*header*/
   .hamburger {
       display: none;
   }
@@ -150,6 +221,19 @@ footer {
       padding-right: 0;
   }
 }
+/*section*/
+#big-col .card {
+  flex-direction: row;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+#demo img {
+  align-self: flex-end;
+}
+
 @media screen and (min-width: 1200px){
   .container {
       max-width: 1180px;
