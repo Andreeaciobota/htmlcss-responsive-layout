@@ -12,10 +12,25 @@ a {color: #FFF;
   text-decoration: none;
 
 }
+img{
+  display: block;
+  max-width: 100%;
+}
+p{
+  line-height: 1.6rem;
+}
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
 /* UTILS */
 .container {
   width: 100%;
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -23,7 +38,7 @@ a {color: #FFF;
 }
 .col {
   border: 1px dashed black;
-  min-height: 400px;
+  /*min-height: 400px;*/
   width: 100%;
   padding: 2rem;
 }
@@ -35,15 +50,23 @@ a {color: #FFF;
 .flex-col {
   flex-direction: column;
 }
+.flex-row {
+  flex-direction: row;
+}
+
+
 .pb-2 {
   padding-bottom: 2rem;
 }
 .pt-2 {
   padding-top: 2rem;
 }
+.p-2 {
+  padding: 2rem;
+}
 .card {
   width: 100%;
-  height: 100%;
+  /*height: 100%;*/
   border-radius: 1.4rem;
   padding: 2rem;
 }
@@ -53,6 +76,15 @@ a {color: #FFF;
 .txt-white {
   color: #FFF;
 }
+txt-purple {
+  color: #9792E4;
+}
+
+.txt-blue {
+  color: #2083F7;
+}
+
+
 /* HEADER */
 header {
   position: fixed;
@@ -98,14 +130,7 @@ fa-bars {
   padding-bottom: 0;
 }
 
-#demo h3{
-  color: #2083F7;
-  font-size: 1.3rem;
-  font-weight: 700;
-}
-
 #demo p {
-  line-height: 1.6rem;
   color: #5A6E7F;
   font-weight: 700;
 }
@@ -137,15 +162,50 @@ fa-bars {
 #planning {
   background-color: #9792E4;
 }
-#benefits .card,
-#planning .card {
-  background-color: #FFF;
+
+#planning p{
+  font-size: 1.1rem;
+}
+
+.purple-bttn {
+  background-color: #9792E4;
+}
+
+.round-bttn {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  color: #000;
+  line-height: 2rem;
+  margin: 0 auto;
 }
 /* TESTIMONIALS  */
 #start,
 #testimonials .card {
   background-color: #9792E4;
 }
+testimonials img {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+blockquote {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+.name-testimonial {
+  font-size: 1.4rem;
+}
+/* BENEFITS */
+#planning .card,
+#benefits .card {
+    background-color: #FFF;
+}
+
+
 
 /* START */
 
@@ -189,7 +249,13 @@ footer {
   }
 }
 /*section*/
+.w-20 {
+  width: calc(100% / 5 - 10rem);
+}
 
+.w-80 {
+  width: calc(100% / 5 * 4 - 10rem);
+}
 @media screen and (min-width: 999px) {
   .container {
     /*layout*/
@@ -233,6 +299,15 @@ footer {
 #demo img {
   align-self: flex-end;
 }
+#planning .card img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#planning .col {
+  align-self: flex-end;
+}
+
 
 @media screen and (min-width: 1200px){
   .container {
